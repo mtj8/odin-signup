@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "tnr-mt-std";
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "tnr-mt-std";
+    src: url("./fonts/timesnewromanmtstd-boldcond-webfont.woff2"), format("woff2"),
+         url("./fonts/timesnewromanmtstd-boldcond-webfont.woff"), format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "tnr-mt-std";
+    src: url("./fonts/timesnewromanmtstd-boldit-webfont.woff2"), format("woff2"),
+         url("./fonts/timesnewromanmtstd-boldit-webfont.woff"), format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "tnr-mt-std";
+    src: url("./fonts/timesnewromanmtstd-webfont.woff2"), format("woff2"),
+         url("./fonts/timesnewromanmtstd-webfont.woff"), format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.sidebar {
+    width: 40%;
+    height: 100%;
+    background: url("https://clearhue.com/wp-content/uploads/2019/08/pattern-slider1.png") no-repeat black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 0.5rem;
+    color: #cccccc;
+}
+.sign-up {
+    width: 60%;
+    height: 100%;
+    background-color: #380007;
+    color: #cccccc;
+}
+
+.sign-up h2 {
+    font-family: "tnr-mt-std", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: calc(1.5em + 0.2vw);
+}
+
+.sign-up-header {
+    padding-top: 150px;
+}
+
+.sign-up-header h2 {
+    width: 75%;
+    margin-bottom: 1em;
+}
+
+.sign-up-header h2:last-child {
+    margin-bottom: 1.5em;
+}
+
+/* setting margin */
+.sign-up-header,
+.sign-up-account,
+.sign-up-form h2,
+.sign-up-fields,
+.sign-up-submit {
+    --sign-up-margin: 30px;
+    margin-left: var(--sign-up-margin);
+}
+
+.sign-up-fields,
+.sign-up-columns {
+    display: flex;
+}
+
+.sign-up fieldset {
+    border: none;
+    background: #1e0101;
+}
+
+.sign-up-columns {
+    flex-direction: column;
+}
+
+.sign-up-columns label {
+    font-size: 0.8rem;
+}
+
+.sign-up-form {
+    margin-bottom: 2em;
+}
+
+.sign-up-form h2 {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.sign-up-columns:first-of-type {
+    margin-right: 6rem;
+}
+
+input {
+    width: 15em;
+    padding: 0.2em 1em;
+    margin-bottom:20px;
+    border: none;
+    background-color: #cccccc;
+}
+
+input:focus {
+    background-color: #e4e4e4;
+    box-shadow: 0.2em 0.2em 0.5em #cccccc;
+}
+
+input:invalid {
+    outline: 1px solid #CC0119;
+}
+
+.sign-up-submit {
+    margin-top: 2em;
+    width: 16em;
+    padding: 8px;
+    background: black;
+    color: #CC0119;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0.1em 0.1em 0.5em #cccccc;
+}
+
+a,
+a:visited {
+    color: #CC0119;
+    text-decoration: none;
+}
